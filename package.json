@@ -1,0 +1,14 @@
+{
+  "name": "day-05-crongenius",
+  "version": "1.0.0",
+  "description": "Visual Cron Expression Engine & Schedule Studio with Live Translator & Webhook Simulator",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 3005",
+    "deploy": "npm run build && firebase deploy --only hosting"
+  },
+  "author": "sgowdavivek <sgowdavivek@gmail.com>",
+  "license": "MIT"
+}
