@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="tokyo">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CronGenius — React 19 Visual Cron Schedule Studio</title>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,11 +18,8 @@
     </div>
   </div>
 
-  <!-- Standalone React 19 + ReactDOM Vendor Bundle -->
-  <script src="vendor/react.min.js"></script>
-
-  <!-- Compiled React 19 Application -->
-  <script type="module" src="dist/App.js"></script>
+  <!-- Vite Entrypoint -->
+  <script type="module" src="/src/App.jsx"></script>
 
 </body>
 </html>

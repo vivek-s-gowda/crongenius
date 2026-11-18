@@ -4,16 +4,19 @@
 import { CronParser } from './cronParser.js';
 import { CronTranslator } from './cronTranslator.js';
 import { CronCalculator } from './cronCalculator.js';
-import { Header } from './components/Header.js';
-import { CronExpressionBar } from './components/CronExpressionBar.js';
-import { CronVisualBuilder } from './components/CronVisualBuilder.js';
-import { ScheduleTimeline } from './components/ScheduleTimeline.js';
-import { PresetsPicker } from './components/PresetsPicker.js';
-import { WebhookSimulator } from './components/WebhookSimulator.js';
-import { CodeSnippetExporter } from './components/CodeSnippetExporter.js';
-import { Toast } from './components/Toast.js';
+import { Header } from './components/Header.jsx';
+import { CronExpressionBar } from './components/CronExpressionBar.jsx';
+import { CronVisualBuilder } from './components/CronVisualBuilder.jsx';
+import { ScheduleTimeline } from './components/ScheduleTimeline.jsx';
+import { PresetsPicker } from './components/PresetsPicker.jsx';
+import { WebhookSimulator } from './components/WebhookSimulator.jsx';
+import { CodeSnippetExporter } from './components/CodeSnippetExporter.jsx';
+import { Toast } from './components/Toast.jsx';
 
-const { useState, useEffect, useMemo, useCallback } = window.React;
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import ReactDOM from 'react-dom/client';
+window.React = React;
+window.ReactDOM = ReactDOM;
 
 export function App() {
   const [currentTheme, setCurrentTheme] = useState('tokyo');
